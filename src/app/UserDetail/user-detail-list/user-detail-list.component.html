@@ -1,0 +1,70 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">userdetaillist</h4>
+                        <p class="card-category"> View here all UserDetailList table record</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary" style="background-color: #ea48441c;">
+                                    <th>UserDetailId </th>
+                                    <th>RegistrationId </th>
+                                    <th>EndUserPlanId</th>
+                                    <th>ProfileTagLine</th>
+                                    <th>Photo</th>
+                                    <th>BirthDate</th>
+                                    <th>Address</th>
+                                    <th>ContactNo</th>
+                                    <th>CountryId</th>
+                                    <th>StateId</th>
+                                    <th>CityId</th>
+                                    <th>Status</th>
+                                  
+                                    <!-- <th>Categorized </th> -->
+                                    <!-- <th>PostBy </th> -->
+                                    <th>Action </th>
+                                        
+                                   
+                              
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let i of UserDetailList">
+                                        <td>{{i.UserDetailId}}</td>
+                                        <td>{{i.RegistrationId}}</td>
+                                        <td>{{i.EndUserPlanId}}</td>
+                                        <td>{{i.ProfileTagLine}}</td>
+                                        <td>{{i.Photo}}</td>  
+                                        <td>{{i.BirthDate}}</td>
+                                        <td>{{i.Address}}</td>
+                                        <td>{{i.ContactNo}}</td>
+                                        <td>{{i.CountryId}}</td>
+                                        <td>{{i.StateId}}</td>
+                                        <td>{{i.CityId}}</td> 
+                                        <td>{{i.Status}}</td>
+                                        
+                                        <!-- <td> <img src="{{imgPath}}Content/UserDetail/{{i.Photo}}" style="height: 80px;width: 80px;"></td> -->
+                                        <!-- <td>{{i.Categorized}}</td>
+                                        <td>{{i.PostBy}}</td> -->
+                                        <!-- <td>{{i.Sectiontwo}}</td> -->
+                                        <td> <img src="{{imgPath}}Content/UserDetail/{{i.Photo}}" style="height: 80px;width: 80px;"></td>
+                                        <td><i class="fa fa-pencil-square iconaction"(click)="Edit(i.UserDetailId)"  aria-hidden="true"></i>
+                                            &nbsp;   <i class="fa fa-eye iconaction" (click)="View(i.UserDetailId)" aria-hidden="true"></i>
+                                             &nbsp; <i class="fa fa-trash iconaction"(click)="Delete(i.UserDetailId)" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>    
+                                                           
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+    </div>
+  </div>
+

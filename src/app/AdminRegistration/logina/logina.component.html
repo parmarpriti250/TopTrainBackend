@@ -1,0 +1,26 @@
+<div class="row marginlittle">
+    <div class="col-md-6 topform">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Login</h4>
+                <p class="card-category"></p>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Email Id">Email Id:</label>
+                            <input type="text" [(ngModel)]="loginArray.EmailId" class="form-control" name="EmailId" placeholder="Enter Email Id" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Password">Password:</label>
+                            <input type="text" [(ngModel)]="loginArray.Password" class="form-control" name="Password" placeholder="Enter Password" required>
+                        </div>
+                        <button  type="login"(click)="OnLogin()" class="btn btn-primary">Login</button>
+                       
+                        <button  type="login"(click)="OnLogOut()" class="btn btn-primary">LogOut</button>
+                </div>
+       
+ 

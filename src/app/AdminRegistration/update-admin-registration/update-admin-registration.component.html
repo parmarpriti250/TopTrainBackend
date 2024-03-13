@@ -1,0 +1,67 @@
+<div class="row marginlittle">
+    <div class="col-md-6 topform">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">AdminRegistration</h4>
+                <p class="card-category">Add new AdminRegistration here</p>
+            </div>
+            <div class="card-body">
+                <form #achievementForm="ngForm">
+                    <div class="col-md-6">
+                        <div class="col-md-6">
+                            
+                        
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="FirstName">FirstName:</label>
+                                <input type="text" [(ngModel)]="adminregistration.FirstName" class="form-control" name="FirstName" placeholder="Enter FirstName" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="LastName">LastName:</label>
+                                <input type="text" [(ngModel)]="adminregistration.LastName" class="form-control" name="LastName" placeholder="Enter LastName" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Email">Email:</label>
+                                <input type="text" [(ngModel)]="adminregistration.Email" class="form-control" name="Email" placeholder="Enter Email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Password">Password:</label>
+                                <input type="text" [(ngModel)]="adminregistration.Password" class="form-control" name="Password" placeholder="Enter Password" required>
+                            </div>
+                        </div>
+    
+                        
+                       
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="EmailStatus">EmailStatus:</label>
+                                <input type="text" [(ngModel)]="adminregistration.EmailStatus" class="form-control" name="EmailStatus" placeholder="Enter EmailStatus" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="OtpNo">OtpNo:</label>
+                                <input type="text" [(ngModel)]="adminregistration.OtpNo" class="form-control" name="OtpNo" placeholder="Enter OtpNo" required>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Status">Status:</label>
+                                <input type="text" [(ngModel)]="adminregistration.Status" class="form-control" name="Status" placeholder="Enter Status" required>
+                            </div>
+                        </div>
+    
+    
+    
+                        <button  type="submit"(click)="OnSubmit()" class="btn btn-danger pull-right">Submit</button>
+                        <div class="clearfix"></div> 
+                </div>
+        
+  

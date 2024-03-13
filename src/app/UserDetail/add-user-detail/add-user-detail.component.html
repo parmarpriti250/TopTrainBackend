@@ -1,0 +1,88 @@
+<div class="row marginlittle">
+    <div class="col-md-12 topform">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">UserDetail</h4>
+                <p class="card-category">Add new UserDetail here</p>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="RegistrationId">RegistrationId:</label>
+                            <input type="text" [(ngModel)]="userdetail.RegistrationId" class="form-control" name="RegistrationId" placeholder="Enter RegistrationId" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="EndUserPlanId">EndUserPlanId:</label>
+                            <input type="text" [(ngModel)]="userdetail.EndUserPlanId" class="form-control" name="EndUserPlanId" placeholder="Enter EndUserPlanId" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="ProfileTagLine">ProfileTagLine:</label>
+                            <input type="text" [(ngModel)]="userdetail.ProfileTagLine" class="form-control" name="ProfileTagLine" placeholder="Enter ProfileTagLine" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+       
+                        <label for="avatar">Photo: </label>
+                        <input type="file" id="avatar"  name="Photo"  [(ngModel)]="userdetail.Photo"  (change)="fileChangeEvent($event)" #PhotoControl="ngModel"accept="image/png, image/jpeg" required>
+                       
+                       </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="BirthDate">BirthDate:</label>
+                            <input type="text" [(ngModel)]="userdetail.BirthDate" class="form-control" name="BirthDate" placeholder="Enter BirthDate" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Address">Address:</label>
+                            <input type="text" [(ngModel)]="userdetail.Address" class="form-control" name="Address" placeholder="Enter Address" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="ContactNo">ContactNo:</label>
+                            <input type="text" [(ngModel)]="userdetail.ContactNo" class="form-control" name="ContactNo" placeholder="Enter ContactNo" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="CountryId">CountryId:</label>
+                            <input type="text" [(ngModel)]="userdetail.CountryId" class="form-control" name="CountryId" placeholder="Enter CountryId" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="StateId">StateId:</label>
+                            <input type="text" [(ngModel)]="userdetail.StateId" class="form-control" name="StateId" placeholder="Enter StateId" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="CityId">CityId:</label>
+                            <input type="text" [(ngModel)]="userdetail.CityId" class="form-control" name="CityId" placeholder="Enter CityId" required>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Status">Status:</label>
+                            <input type="text" [(ngModel)]="userdetail.Status" class="form-control" name="Status" placeholder="Enter Status" required>
+                        </div>
+                    </div>
+
+                    
+             
+                  
+                    <button mat-raised-button type="submit"(click)="OnSubmit()" class="btn btn-danger pull-right">Submit</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

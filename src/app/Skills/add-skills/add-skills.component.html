@@ -1,0 +1,42 @@
+<div class="row marginlittle">
+    <div class="col-md-6 topform">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Skills</h4>
+                <p class="card-category">Add new Skills here</p>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="IndustryId">IndustryId:</label>
+                            <input type="text" [(ngModel)]="skills.IndustryId" class="form-control" name="IndustryId" placeholder="Enter IndustryId" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Title">Title:</label>
+                            <input type="text" [(ngModel)]="skills.Title" class="form-control" name="Title" placeholder="Enter Title" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Description">Description:</label>
+                            <input type="text" [(ngModel)]="skills.Description" class="form-control" name="Description" placeholder="Enter Description" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="CertificateStatus">CertificateStatus:</label>
+                            <input type="text" [(ngModel)]="skills.CertificateStatus" class="form-control" name="CertificateStatus" placeholder="Enter CertificateStatus" required>
+                        </div>
+                    </div>
+                   
+                
+                    <button  type="submit"(click)="OnSubmit()" class="btn btn-danger pull-right">Submit</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

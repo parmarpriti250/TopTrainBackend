@@ -1,0 +1,32 @@
+<div class="row marginlittle">
+    <div class="col-md-12 topform">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">UserDetail</h4>
+                <p class="card-category">Add new UserDetail here</p>
+            </div>
+            <div class="card-body">
+                <form>
+                    
+                    <div class="col-md-6">
+                        <label for="avatar">Photo: </label>
+                        <input type="file" id="avatar"  name="Photo"  [(ngModel)]="demo.Photo"  (change)="fileChangeEvent($event)" #PhotoControl="ngModel"accept="image/png, image/jpeg" required>
+                
+                       </div>
+
+                  
+                       <div class="col-md-6">
+                        <label> PDF: </label>
+                        <input type="file" id="avatar"  name="PDF"  [(ngModel)]="demo.PDF"  (change)="fileChangeEventt($event)" #PDFControl="ngModel"accept="PDF/doc, PDF/doc" required>
+                
+                       </div>
+                    
+             
+                  
+                    <button mat-raised-button type="submit"(click)="OnSubmit()" class="btn btn-danger pull-right">Submit</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

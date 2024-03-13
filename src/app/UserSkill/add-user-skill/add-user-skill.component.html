@@ -1,0 +1,45 @@
+<div class="row marginlittle">
+    <div class="col-md-6 topform">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">UserSkill</h4>
+                <p class="card-category">Add new UserSkill here</p>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="SkillsId">SkillsId:</label>
+                            <select placeholder="SkillsId"[(ngModel)]="userskill.Skills.SkillsId"  name="SkillsId" #SkillsIdControl="ngModel" >
+                                <option *ngFor="let Skills of skillsList" [value]="Skills.SkillsId" >
+                                  {{Skills.Title}}</option>
+                                </select>
+                        </div>
+                            
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="RegistrationId">RegistrationId:</label>
+                            <input type="text" [(ngModel)]="userskill.RegistrationId" class="form-control" name="RegistrationId" placeholder="Enter RegistrationId" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Certificate">Certificate:</label>
+                            <input type="text" [(ngModel)]="userskill.Certificate" class="form-control" name="Certificate" placeholder="Enter Certificate" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Status">Status:</label>
+                            <input type="text" [(ngModel)]="userskill.Status" class="form-control" name="Status" placeholder="Enter Status" required>
+                        </div>
+                    </div>
+                    
+                    <button  type="submit"(click)="OnSubmit()" class="btn btn-danger pull-right">Submit</button>
+                    <div class="clearfix"></div>
+           
+   
+    
+
+

@@ -1,0 +1,56 @@
+<div class="row marginlittle">
+    <div class="col-md-6 topform">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">UserEducation</h4>
+                <p class="card-category">Add new UserEducation here</p>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="RegistrationId">RegistrationId:</label>
+                            <input type="text" [(ngModel)]="usereducation.RegistrationId" class="form-control" name="RegistrationId" placeholder="Enter RegistrationId" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Title">Title:</label>
+                            <input type="text" [(ngModel)]="usereducation.Title" class="form-control" name="Title" placeholder="Enter Title" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Description">Description:</label>
+                            <input type="text" [(ngModel)]="usereducation.Description" class="form-control" name="Description" placeholder="Enter Description" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="University">University:</label>
+                            <input type="text" [(ngModel)]="usereducation.University" class="form-control" name="University" placeholder="Enter University" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="College">College:</label>
+                            <input type="text" [(ngModel)]="usereducation.College" class="form-control" name="College" placeholder="Enter College" required>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Status">Status:</label>
+                            <input type="text" [(ngModel)]="usereducation.Status" class="form-control" name="Status" placeholder="Enter Status" required>
+                        </div>
+                    </div>
+                
+                    <button  type="submit"(click)="OnSubmit()" class="btn btn-danger pull-right">Submit</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
