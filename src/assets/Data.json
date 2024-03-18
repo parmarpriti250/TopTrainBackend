@@ -1,0 +1,65 @@
+{
+    "countries": [
+        {
+            "name": "United States",
+            "states": [
+                {
+                    "name": "California",
+                    "cities": [
+                        "Los Angeles",
+                        "San Francisco",
+                        "San Diego"
+                    ]
+                },
+                {
+                    "name": "Texas",
+                    "cities": [
+                        "Houston",
+                        "Dallas",
+                        "Austin"
+                    ]
+                },
+                {
+                    "name": "New York",
+                    "cities": [
+                        "New York City",
+                        "Buffalo",
+                        "Rochester"
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "name": "United Kingdom",
+            "states": [
+                {
+                    "name": "England",
+                    "cities": [
+                        "London",
+                        "Manchester",
+                        "Birmingham"
+                    ]
+                },
+                {
+                    "name": "Scotland",
+                    "cities": [
+                        "Glasgow",
+                        "Edinburgh",
+                        "Aberdeen"
+                    ]
+                },
+                {
+                    "name": "Wales",
+                    "cities": [
+                        "Cardiff",
+                        "Swansea",
+                        "Newport"
+                    ]
+                }
+               
+            ]
+        }
+      
+    ]
+}

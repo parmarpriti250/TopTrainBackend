@@ -47,6 +47,11 @@ import { ForgotPasswordOTPComponent } from './AdminRegistration/forgot-password-
 import { ForgotPasswordMailComponent } from './AdminRegistration/forgot-password-mail/forgot-password-mail.component';
 import { MailVerificationOTPComponent } from './AdminRegistration/mail-verification-otp/mail-verification-otp.component';
 import { ResetPasswordComponent } from './AdminRegistration/reset-password/reset-password.component';
+import { DropdownComponent } from './drop-do-wn/drop-do-wn.component';
+
+
+
+
 
 
 
@@ -102,6 +107,14 @@ import { ResetPasswordComponent } from './AdminRegistration/reset-password/reset
     DemoListComponent,
     UpdateDemoComponent,
     ResetPasswordComponent,
+    DropdownComponent,
+
+    
+
+   
+
+
+   
 
     
     
